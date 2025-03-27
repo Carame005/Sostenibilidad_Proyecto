@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f8f9fa;
+}
+
+header {
+    background: #2c5f2d;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+section {
+    margin: 3rem 0;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 1s;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.eco-svg {
+    width: 150px;
+    margin: 1rem auto;
+    display: block;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.card {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.centre{
+    text-align: center;
+}
+
+#objetivos {
+    background-color: #f4faf4;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+}
+
+.ods-list {
+    columns: 2;
+    gap: 2rem;
+    padding-left: 1.5rem;
+}
+
+.ods-list li {
+    margin-bottom: 0.8rem;
+    break-inside: avoid;
+}
+
+/* Añadir a styles.css */
+.computing-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 2fr 1fr;
+    margin-top: 2rem;
+}
+
+.energy-list li {
+    background: #fff;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.energy-list strong {
+    color: #2c5f2d;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.ods-targets {
+    display: grid;
+    gap: 1rem;
+    background: #f8fff8;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.ods-item {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.ods-number {
+    background: #2c5f2d;
+    color: white;
+    min-width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.energy-icon {
+    width: 60px;
+    margin: 1rem auto;
+    fill: #2c5f2d;
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .computing-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ods-targets {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .ods-list {
+        columns: 1;
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 0.5rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+    }
+}
