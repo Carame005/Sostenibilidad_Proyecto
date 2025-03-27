@@ -132,6 +132,74 @@ img {
     opacity: 0.8;
 }
 
+/* Añadir a styles.css */
+.eficiencia-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    margin-top: 2rem;
+}
+
+.estrategia-card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.estrategia-card:hover {
+    transform: translateY(-5px);
+}
+
+.estrategia-icon {
+    width: 48px;
+    height: 48px;
+    fill: #2c5f2d;
+    margin-bottom: 1rem;
+}
+
+.eficiencia-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 1rem 0;
+}
+
+.eficiencia-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.eficiencia-list li:last-child {
+    border-bottom: none;
+}
+
+.ods-impacto {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 2px solid #f4faf4;
+}
+
+.ods-pill {
+    display: inline-block;
+    background: #2c5f2d26;
+    color: #2c5f2d;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    margin: 0.25rem;
+}
+
+@media (max-width: 600px) {
+    .eficiencia-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .estrategia-card {
+        padding: 1rem;
+    }
+}
+
 @media (max-width: 768px) {
     .computing-grid {
         grid-template-columns: 1fr;
